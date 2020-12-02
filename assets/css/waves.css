@@ -1,0 +1,140 @@
+/* Wave container */
+.shape-divider-waves {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	line-height: 0;
+}
+
+/* wave svg main */
+.shape-divider-waves svg {
+	position: relative;
+	width: calc(100% + 1.3px);
+	z-index: 1;
+}
+
+/* first wave */
+.shape-divider-waves .wave1-svg {
+	height: 118px;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	z-index: 11;
+	opacity: 0.8;
+}
+
+.shape-divider-waves .wave1 {
+	fill: #5559A4;
+}
+
+/* second wave */
+.shape-divider-waves .wave2-svg {
+	height: 190px;
+	top: -116px;
+	-webkit-filter: blur(2px);
+	        filter: blur(2px);
+}
+
+.shape-divider-waves .wave2 {
+	fill: #8932A282;
+}
+
+/* third wave  */
+.shape-divider-waves .wave3-svg {
+	line-height: 0;
+	height: 75px;
+	top: -308px;
+	-webkit-transform: rotateX(180deg);
+	        transform: rotateX(180deg);
+	z-index: 11;
+}
+
+.shape-divider-waves .wave3 {
+	fill: #8B30A2B0;
+}
+
+/* fourth wave */
+.shape-divider-waves .wave4-svg {
+	height: 500px;
+	z-index: 11;
+	bottom: 45px;
+	-webkit-filter: blur(14px);
+	        filter: blur(14px);
+}
+
+.shape-divider-waves .wave4 {
+	fill: #D62A7A;
+}
+
+/* fifth wave  */
+.shape-divider-waves .wave5-svg {
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	height: 183px;
+	top: -53px;
+	-webkit-filter: blur(10px);
+	        filter: blur(10px);
+	z-index: 11;
+}
+
+.shape-divider-waves .wave5 {
+	fill: #2D3164;
+}
+
+/* sixth wave  */
+.shape-divider-waves .wave6-svg {
+	height: 220px;
+	top: -730px;
+	-webkit-filter: blur(10px);
+	        filter: blur(10px);
+}
+
+.shape-divider-waves .wave6 {
+	fill: #339B9B;
+}
+
+/* seventh wave  */
+.shape-divider-waves .wave7-svg {
+	width: calc(190% + 1.3px);
+	height: 500px;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	bottom: 850px;
+	z-index: 11;
+	-webkit-filter: blur(100px);
+	        filter: blur(100px);
+}
+
+.shape-divider-waves .wave7 {
+	fill: #0ED5F5;
+}
+
+/* eighth wave  */
+.shape-divider-waves .wave8-svg {
+	width: calc(125% + 1.3px);
+	height: 135px;
+	-webkit-transform: rotateX(180deg);
+	        transform: rotateX(180deg);
+	top: -1575px;
+	-webkit-filter: blur(10px);
+	        filter: blur(10px);
+}
+
+.shape-divider-waves .wave8 {
+	fill: #EA555D;
+}
+
+/* ninth wave  */
+.shape-divider-waves .wave9-svg {
+	height: 250px;
+	-webkit-transform: rotateX(180deg);
+	        transform: rotateX(180deg);
+	top: -1440px;
+	z-index: 11;
+	-webkit-filter: blur(30px);
+	        filter: blur(30px);
+}
+
+.shape-divider-waves .wave9 {
+	fill: #8B30A2;
+}
