@@ -1,5 +1,6 @@
 node_modules
 .DS_Store
+.idea
 /dev_source
 *.json
 .js
