@@ -311,7 +311,8 @@ a {
   margin-right: 20px;
 }
 
-.founds__text {
+.founds__text,
+.form__text {
   margin-top: 0;
   margin-bottom: 0;
   color: #100d1f;
@@ -644,8 +645,8 @@ a {
 }
 
 .dealmaking {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .dealmaking__content {
@@ -668,8 +669,8 @@ a {
   background-color: #181024;
   position: relative;
   z-index: 1;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .source__content {
@@ -725,6 +726,80 @@ a {
   max-width: 340px;
   font-size: 16px;
   line-height: 32px;
+}
+
+.form {
+  background: linear-gradient(81deg, #ddb35f, #7409c7);
+  position: relative;
+  z-index: 1;
+}
+
+.form > .config {
+  background-color: #fdfeff;
+  margin-right: auto;
+} 
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #100d1f;
+  max-width: 700px;
+  width: 100%;
+}
+
+.form__text {
+  max-width: 700px;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.form__box {
+  display: flex;
+}
+
+.form__label {
+  background-color: #f1f5f8;
+  width: 100%;
+  display: block;
+  max-width: 700px;
+}
+
+.form__input {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  line-height: 44px;
+  padding-left: 20px;
+  max-width: 700px;
+  width: 100%;
+  color: #181024;
+  padding-right: 20px;
+  outline: none;
+}
+
+.form__btn {
+  border: 1px solid transparent;
+  background-color: #181024;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 200px;
+  width: 100%;
+  margin-left: 20px;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 1s;
+}
+
+.form__btn:hover {
+  background-color: transparent;
+  color: #181024;
+  border: 1px solid #181024;
 }
 
 @keyframes stopit {
@@ -942,6 +1017,23 @@ a {
     background-color: #100d1f;
   }
 
+  .burger-menu.active {
+    position: relative;
+    left: 10px;
+  }
+
+  .line-middle.active {
+    opacity: 0;
+  }
+
+  .line-top.active  {
+    transform: rotate(45deg) translateY(14px);
+  }
+
+  .line-bottom.active {
+    transform: rotate(-45deg) translateY(-16px);
+  }
+
   .founds__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1005,6 +1097,15 @@ a {
   .stats__info:last-child {
     margin-bottom: 0;
   }
+
+  .form__box {
+    flex-direction: column;
+  }
+
+  .form__btn {
+    margin-left: auto;
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1061,5 +1162,16 @@ a {
   .source__box > .icon {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .form__title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .form__btn {
+    margin-left: 0;
+    margin-top: 30px;
+    max-width: inherit;
   }
 }
