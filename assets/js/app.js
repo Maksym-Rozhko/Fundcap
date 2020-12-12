@@ -14,3 +14,22 @@ burgerMenu.addEventListener('click', (e) => {
     burgerLineMiddle.classList.toggle('active');
     burgerLineBottom.classList.toggle('active');
 });
+
+const footerNavLists = document.querySelectorAll('.footer__list--active');
+const idList1 = document.getElementById('list1');
+const idList2 = document.getElementById('list2');
+const idList3 = document.getElementById('list3');
+const idList4 = document.getElementById('list4');
+
+for (let list of footerNavLists) {
+    list.addEventListener('click', e => {
+        e.preventDefault();
+        target = e.target;
+        listName = list.innerText;
+        listName === 'Product' ? idList1.classList.toggle('show__list') : false;
+        listName === 'Features' ? idList2.classList.toggle('show__list') : false;
+        listName === 'Services' ? idList3.classList.toggle('show__list') : false;
+        listName === 'About' ? idList4.classList.toggle('show__list') : false;
+    });
+}
+
