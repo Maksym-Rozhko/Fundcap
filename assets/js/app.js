@@ -24,7 +24,6 @@ const idList4 = document.getElementById('list4');
 for (let list of footerNavLists) {
     list.addEventListener('click', e => {
         e.preventDefault();
-        target = e.target;
         listName = list.innerText;
         listName === 'Product' ? idList1.classList.toggle('show__list') : false;
         listName === 'Features' ? idList2.classList.toggle('show__list') : false;
